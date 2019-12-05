@@ -25,25 +25,50 @@ export const TabNavigator = createBottomTabNavigator({
                             source={require('../resources/labelIcon/photo.png')
                             }
                             style={{
-                                width: 20,
-                                height: 20,
-                                borderRadius: 40 / 2,
+                                width: 26,
+                                height: 26,
+                                tintColor: tintColor
+                            }}
+                        />
+                    );
+                } else if (routeName === 'Download') {
+                    return (
+                        <Image
+                            source={require('../resources/labelIcon/photo.png')
+                            }
+                            style={{
+                                width: 26,
+                                height: 26,
+                                tintColor: tintColor
+                            }}
+                        />
+                    );
+                } else if (routeName === 'RemoteControl') {
+                    return (
+                        <Image
+                            source={require('../resources/labelIcon/remoteControl.png')
+                            }
+                            style={{
+                                width: 26,
+                                height: 26,
+                                tintColor: tintColor
                             }}
                         />
                     );
                 } else if (routeName === 'Devices') {
                     return (
                         <Image
-                            source={require('../resources/labelIcon/photo.png')
+                            source={require('../resources/labelIcon/devices.png')
                             }
                             style={{
-                                width: 20,
-                                height: 20,
-                                borderRadius: 40 / 2,
+                                width: 26,
+                                height: 26,
+                                tintColor: tintColor
                             }}
                         />
                     );
                 }
+
             },
         }),
         tabBarOptions: {
